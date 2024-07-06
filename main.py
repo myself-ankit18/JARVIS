@@ -41,6 +41,17 @@ def processCommand(c):
             webbrowser.open(lin)
         else:
             speak("music not found")
+    elif "search" in command:
+        search_query = command.replace("search", "").strip()
+        response = search_google_knowledge_graph(search_query)
+        speak(response)
+    elif "calculate" in command:
+        calculation = command.replace("calculate", "").strip()
+        try:
+            result = eval(calculation)
+            speak(f"The result is {result}")
+        except Exception as e:
+            speak("Sorry, I couldn't calculate that.")
     else:
         response = search_google_knowledge_graph(command)
         speak(response)
