@@ -2,6 +2,7 @@ socialmedias = {
     "facebook": "https://facebook.com",
     "google": "https://google.com",
     "instagram": "https://instagram.com",
+    "github":"https://github.com",
     "linkedin": "https://linkedin.com",
     "youtube": "https://youtube.com",
     "twitter": "https://twitter.com",
