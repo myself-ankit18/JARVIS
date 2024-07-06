@@ -66,8 +66,6 @@ if __name__ == "__main__":
 
         except sr.UnknownValueError:
             print("Could not understand audio")
-        except sr.RequestError as e:
-            print(f"Could not request results; {e}")
         except Exception as e:
             print(f"Error: {e}")
     
