@@ -4,10 +4,9 @@ import pyttsx3
 from googleapiclient.discovery import build
 import socialmedia
 import music
+from config import GOOGLE_API_KEY as API_KEY
 
 engine = pyttsx3.init()
-
-API_KEY = ''
 
 def speak(text):
     engine.say(text)
