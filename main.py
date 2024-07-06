@@ -7,7 +7,7 @@ import music
 
 engine = pyttsx3.init()
 
-API_KEY = 'AIzaSyB0hJ-RMNEA0TtwYezBsZ6cJpU07GbwGuM'
+API_KEY = ''
 
 def speak(text):
     engine.say(text)
