@@ -8,6 +8,9 @@ from config import GOOGLE_API_KEY as API_KEY
 
 engine = pyttsx3.init()
 
+voices = engine.getProperty('voices')
+engine.setProperty('voice', voices[1].id) 
+
 def speak(text):
     engine.say(text)
     engine.runAndWait()
@@ -32,6 +35,7 @@ def processCommand(c):
         link = socialmedia.socialmedias.get(sm, "")
         if link:
             webbrowser.open(link)
+            speak(f"{sm} is opened")
         else:
             speak("Social media not found")
     elif c.lower().startswith("play"):
@@ -39,6 +43,7 @@ def processCommand(c):
         lin = music.songs.get(s,"")
         if lin:
             webbrowser.open(lin)
+            speak(f"{s} is played")
         else:
             speak("music not found")
     elif "search" in command:
