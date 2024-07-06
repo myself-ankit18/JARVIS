@@ -190,7 +190,7 @@ socialmedias = {
 
     # Cloud Storage
     "dropbox": "https://dropbox.com",
-    "google_drive": "https://drive.google.com",
+    "googledrive": "https://drive.google.com",
     "icloud": "https://icloud.com",
     "onedrive": "https://onedrive.live.com",
     "box": "https://box.com",
