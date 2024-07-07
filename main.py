@@ -11,6 +11,9 @@ engine = pyttsx3.init()
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id) 
 
+rate = engine.getProperty('rate')
+engine.setProperty('rate', rate - 50) 
+
 def speak(text):
     engine.say(text)
     engine.runAndWait()
@@ -46,19 +49,19 @@ def processCommand(c):
             speak(f"{s} is played")
         else:
             speak("music not found")
-    elif "search" in command:
-        search_query = command.replace("search", "").strip()
+    elif "search" in c.lower():
+        search_query = c.lower().replace("search", "").strip()
         response = search_google_knowledge_graph(search_query)
         speak(response)
-    elif "calculate" in command:
-        calculation = command.replace("calculate", "").strip()
+    elif "calculate" in c.lower():
+        calculation = c.lower().replace("calculate", "").strip()
         try:
             result = eval(calculation)
             speak(f"The result is {result}")
         except Exception as e:
             speak("Sorry, I couldn't calculate that.")
     else:
-        response = search_google_knowledge_graph(command)
+        response = search_google_knowledge_graph(c.lower())
         speak(response)
 
 if __name__ == "__main__":
