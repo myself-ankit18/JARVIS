@@ -2,6 +2,17 @@
 
 Jarvis is a voice-activated assistant that can perform various tasks such as searching the web, opening social media, playing music, and performing calculations. It uses speech recognition and text-to-speech to interact with the user.
 
+## Table of Contents
+
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Commands](#commands)
+- [Contributing](#contributing)
+- [Acknowledgements](#acknowledgements)
+
 ## Features
 
 - **Voice Recognition**: Uses Google Speech Recognition to recognize voice commands.
@@ -78,6 +89,19 @@ Jarvis is a voice-activated assistant that can perform various tasks such as sea
     - "Search for Python programming"
     - "Calculate 2 + 2"
 
+## Commands
+
+Jarvis supports the following types of commands:
+
+- **Open Social Media**: Opens a social media platform in your web browser.
+    - Example: "Open Facebook"
+- **Play Music**: Plays a song from a predefined list in your web browser.
+    - Example: "Play song1"
+- **Search the Web**: Searches for information on a given topic using Google Knowledge Graph.
+    - Example: "Search for Python programming"
+- **Perform Calculations**: Performs basic mathematical calculations.
+    - Example: "Calculate 2 + 2"
+
 ## Contributing
 
 1. Fork the repository.
@@ -86,7 +110,15 @@ Jarvis is a voice-activated assistant that can perform various tasks such as sea
 4. Push to the branch (`git push origin feature-branch`).
 5. Open a Pull Request.
 
+
+## Acknowledgements
+
+- [Google Speech Recognition](https://pypi.org/project/SpeechRecognition/)
+- [Pyttsx3](https://pypi.org/project/pyttsx3/)
+- [Google API Client](https://github.com/googleapis/google-api-python-client)
+
 ## Author
 Ankit Kumar Dam
 
-Github Profile link: https://github.com/myself-ankit18
+Github Profile Link: https://github.com/myself-ankit18
+
