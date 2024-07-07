@@ -65,13 +65,13 @@ def processCommand(c):
         speak(response)
 
 if __name__ == "__main__":
-    speak("Hey I am Jarvis, your voice assistant.")
+    speak("Hey I am jarvis. your voice assistant")
     while True:
         r = sr.Recognizer()
         try:
             with sr.Microphone() as source:
                 r.adjust_for_ambient_noise(source)
-                audio = r.listen(source, timeout=2)
+                audio = r.listen(source, timeout=2,phrase_time_limit=1)
             word = r.recognize_google(audio)
             if word.lower() == "jarvis":
                 speak("Yes, how can I help you?")
